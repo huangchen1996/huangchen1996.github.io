@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>标签 | Coder</title>
+  <title>MySQL乱码的问题 | Coder</title>
   <meta name="author" content="Huang Chen">
+  
+  <meta name="description" content="MySQL连接url出现乱码在jdbc中1&amp;lt;property name=&amp;quot;jdbcUrl&amp;quot;&amp;gt;jdbc:mysql://localhost:3306/test?useUnicode=true&amp;amp;characterEncoding=UTF-8 &amp;lt;/proper">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="标签"/>
+  <meta property="og:title" content="MySQL乱码的问题"/>
   <meta property="og:site_name" content="Coder"/>
 
   
@@ -49,26 +51,36 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2018-03-16T13:09:08.886Z"><a href="/2018/03/16/- MySQL/">2018-03-16</a></time>
+      
       
   
-    <h1 class="title">标签</h1>
+    <h1 class="title">MySQL乱码的问题</h1>
   
 
     </header>
     <div class="entry">
       
-        
+        <p>MySQL连接url出现乱码<br>在jdbc中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;property name=&quot;jdbcUrl&quot;&gt;jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8 &lt;/property&gt;</span><br></pre></td></tr></table></figure></p>
+<p>但是在xml文件配置中则需要加一个转义字符&amp;amp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;property name=&quot;jdbcUrl&quot;&gt;jdbc:mysql://localhost:3306/test?useUnicode=true&amp;amp;characterEncoding=UTF-8 &lt;/property&gt;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     <footer>
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/JDBC/">JDBC</a>, <a href="/tags/XML/">XML</a>, <a href="/tags/MySQL/">MySQL</a>
+  </div>
+
         
   <div class="addthis addthis_toolbox addthis_default_style">
     
@@ -93,6 +105,26 @@
   </div>
 </article>
 
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="https://huangchen1996.github.io/2018/03/16/- MySQL/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
 
 </div></div>
     <aside id="sidebar" class="alignright">
